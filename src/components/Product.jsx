@@ -1,6 +1,10 @@
+import { useSelector } from "react-redux";
 
 
 const Product = ({post}) => {
+
+  const {cart}=useSelector((state)=>state);
+  
   return (
     <div>
       <div>
