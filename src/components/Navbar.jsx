@@ -10,7 +10,7 @@ const Navbar = () => {
 
         <NavLink to="/">
           <div>
-            <img src="https://img.atom.com/story_images/visual_images/logo-image-79389-shoppingapp.jpg?class=listing"/>
+            <img src="https://img.atom.com/story_images/visual_images/logo-image-79389-shoppingapp.jpg?class=listing" alt="imgg"/>
           </div>
         </NavLink>
 
