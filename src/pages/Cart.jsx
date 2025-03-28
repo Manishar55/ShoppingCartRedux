@@ -13,12 +13,12 @@ const Cart = () => {
   }, [cart]);
 
   return (
-    <div>
+    <div className="ml-[50px] mr-[50px] justify-center items-center">
       {
         cart.length > 0 ?
           (
-            <div>
-              <div>
+            <div className="flex flex-row gap-20">
+              <div className="">
                 {
                   cart.map((item, index) => {
                     return <CartItem key={item.id} item={item} itemIndex={index} />
