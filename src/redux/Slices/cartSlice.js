@@ -6,8 +6,12 @@ export const CartSlice=createSlice({
     name: "cart",
     initialState: [],
     reducers:{
-        add:()=>{},
-        remove:()=>{},
+        add:(state, action)=>{
+            state.push(action.payload)   //input parameter k ander jo v veja wo action.payload se access kar sakte hai
+        },
+        remove:(state, action)=>{
+            return state.filter((item)=>item.id !== action.payload);
+        },
     }
 });
 
