@@ -14,20 +14,23 @@ const CartItem = ({item, itemIndex}) => {
   return (
     <div>
 
-      <div className="flex flex-row items-center justify-between hover:scale-110 transition duration-300 ease-in
-       gap-10 p-4 mt-10 ml-5 rounded-xl outline w-[900px] ">
-        <div className="h-[280px] w-full ">
+      <div className="flex flex-row items-center  hover:scale-110 transition duration-300 ease-in
+       gap-10 p-4 mt-10 ml-5 rounded-xl outline  ">
+
+        <div className="h-[290px] w-[300px]">
           <img src={item.image} className="h-full w-full " alt="imgg"  />
         </div>
 
-        <div>
-          <h1>{item.title}</h1>
-          <h1>{item.description}</h1>
-          <div>
-            <p>{item.price}</p>
-          </div>
-          <div onClick={removeFromCart}>
-            <MdDelete />
+        <div className="mr-10">
+          <h1 className="font-bold text-xl">{item.title}</h1>
+          <h1>{item.description.split(" ").slice(0,15).join(" ")+"..."}</h1>
+          <div className="flex flex-row justify-between mt-10">
+            <div>
+              <p className="text-green-600 font-bold">${item.price}</p>
+            </div>
+            <div className=" bg-red-300 text-xs h-7 w-7 flex justify-center items-center rounded-full text-red-700" onClick={removeFromCart}>
+              <MdDelete />
+            </div>
           </div>
         </div>
 

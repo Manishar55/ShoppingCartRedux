@@ -13,11 +13,11 @@ const Cart = () => {
   }, [cart]);
 
   return (
-    <div className="ml-[50px] mr-[50px] justify-center items-center">
+    <div className="ml-[100px] mr-[50px] justify-center items-center px-20 w-11/12 mx-auto">
       {
         cart.length > 0 ?
           (
-            <div className="flex flex-row gap-20">
+            <div className="flex flex-row gap-20 w-full ">
               <div className="">
                 {
                   cart.map((item, index) => {
@@ -26,17 +26,20 @@ const Cart = () => {
                 }
               </div>
 
-              <div>
-                <div>Your Cart</div>
-                <div>Summary</div>
-                <p><span>Total Items: {cart.length}</span></p>
-                <div></div>
+              <div className="flex flex-col gap-20 mt-[70px] ">
+                <div>
+                  <div className="uppercase text-xl font-bold text-green-700">Your Cart</div>
+                  <div className="uppercase text-4xl font-bold text-green-700">Summary</div>
+                  <p  className="font-bold text-xl"><span>Total Items: {cart.length}</span></p>
+                  <div></div>
+                </div>
+
+                <div>
+                  <p className="font-bold text-xl">Total Amount: ${totalAmount} </p>
+                  <button className="bg-green-600 px-10 rounded-md py-3 text-white text-xl font-bold ">Checkout Now</button>
+                </div>
               </div>
 
-              <div>
-                <p>Total Amount: ${totalAmount} </p>
-                <button>Checkout Now</button>
-              </div>
             </div>
           ) :
           (
