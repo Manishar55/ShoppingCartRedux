@@ -14,8 +14,8 @@ const CartItem = ({item, itemIndex}) => {
   return (
     <div>
 
-      <div className="flex flex-row items-center  hover:scale-110 transition duration-300 ease-in
-       gap-10 p-4 mt-10 ml-5 rounded-xl outline  ">
+      <div className="flex flex-row items-center ease-in
+       gap-10 p-4 mt-10 ml-5 rounded-xl shadow-md w-[60vw] hover:shadow-xl ">
 
         <div className="h-[290px] w-[300px]">
           <img src={item.image} className="h-full w-full " alt="imgg"  />

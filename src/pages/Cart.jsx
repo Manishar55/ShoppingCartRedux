@@ -36,7 +36,7 @@ const Cart = () => {
 
                 <div>
                   <p className="font-bold text-xl">Total Amount: ${totalAmount} </p>
-                  <button className="bg-green-600 px-10 rounded-md py-3 text-white text-xl font-bold ">Checkout Now</button>
+                  <button className="bg-green-600 px-10 rounded-md py-3 text-white text-xl font-bold hover:scale-110 transition duration-300 ease-in mt-6">Checkout Now</button>
                 </div>
               </div>
 
