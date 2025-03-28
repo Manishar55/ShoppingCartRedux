@@ -43,9 +43,9 @@ const Cart = () => {
             </div>
           ) :
           (
-            <div>
-              <h1>Cart is Empty</h1>
-              <Link to={"/"}><button>Shop Now</button></Link>
+            <div className="flex flex-col items-center jutify-center mt-[100px]">
+              <h1 className="font-bold text-xl">Cart is Empty</h1>
+              <Link to={"/"}><button className="bg-green-600 px-10 rounded-md py-3 text-white text-xl font-bold hover:scale-110 transition duration-300 ease-in mt-6">Shop Now</button></Link>
             </div>
           )
       }
